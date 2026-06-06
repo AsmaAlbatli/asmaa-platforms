@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منصات المشرفة أسماء الباتلي</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#101524; --bg2:#161b2e;
+    --blue:#1565c0; --blue2:#2196f3; --cyan:#00bcd4;
+    --violet:#7c4dff; --gold:#d4a017;
+    --text:#eef2f9; --muted:#9aa6bd;
+    --card:rgba(255,255,255,0.05); --border:rgba(33,150,243,0.25);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--text);
+    min-height:100vh;display:flex;flex-direction:column;}
+  .bg{position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(ellipse 70% 60% at 15% 10%,rgba(33,150,243,0.12) 0%,transparent 60%),
+      radial-gradient(ellipse 60% 70% at 85% 90%,rgba(124,77,255,0.10) 0%,transparent 60%),
+      linear-gradient(160deg,#101524 0%,#0c1120 50%,#080b16 100%);}
+  .wrap{position:relative;z-index:1;flex:1;max-width:1000px;margin:0 auto;padding:48px 22px;
+    width:100%;text-align:center;}
+  .logo{width:96px;height:96px;border-radius:26px;transform:rotate(-6deg);
+    background:linear-gradient(135deg,var(--blue),var(--cyan));
+    display:flex;align-items:center;justify-content:center;font-size:46px;margin:0 auto 24px;
+    box-shadow:0 0 50px rgba(33,150,243,0.4);}
+  h1{font-family:'Cairo',sans-serif;font-size:clamp(26px,5vw,42px);font-weight:900;
+    background:linear-gradient(90deg,var(--blue2),var(--cyan));-webkit-background-clip:text;
+    background-clip:text;color:transparent;margin-bottom:10px;}
+  .sub{color:var(--muted);font-size:clamp(15px,3vw,19px);margin-bottom:44px;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;
+    margin-bottom:46px;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:32px 26px;
+    text-decoration:none;color:var(--text);transition:all .3s;backdrop-filter:blur(10px);
+    display:flex;flex-direction:column;align-items:center;gap:14px;}
+  .card:hover{transform:translateY(-6px);border-color:var(--blue2);
+    box-shadow:0 16px 40px rgba(33,150,243,0.2);}
+  .card .ic{font-size:54px;}
+  .card h2{font-family:'Cairo',sans-serif;font-size:1.3rem;font-weight:800;color:var(--blue2);}
+  .card p{color:var(--muted);font-size:0.92rem;line-height:1.7;}
+  .card .go{margin-top:6px;background:linear-gradient(135deg,var(--blue),var(--blue2));
+    color:#fff;font-weight:800;font-size:0.92rem;padding:11px 30px;border-radius:50px;
+    box-shadow:0 6px 20px rgba(33,150,243,0.35);}
+  .card.q .ic{}
+  .card.q h2{color:var(--cyan);}
+  .card.q .go{background:linear-gradient(135deg,var(--cyan),var(--violet));}
+  footer{position:relative;z-index:1;text-align:center;padding:22px;color:var(--muted);
+    font-size:0.9rem;border-top:1px solid var(--border);}
+  footer strong{color:var(--blue2);}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="wrap">
+  <div class="logo">🎓</div>
+  <h1>منصات المشرفة أسماء الباتلي</h1>
+  <p class="sub">أدوات تعليمية وإشرافية تفاعلية</p>
+
+  <div class="cards">
+    <a class="card" href="platform.html">
+      <div class="ic">📊</div>
+      <h2>منصة تحليل الاختبارات</h2>
+      <p>تحليل إحصائي شامل لدرجات الطلاب: المتوسطات، الرسوم البيانية، تحليل الفقرات، مؤشر التضخم، والطباعة والتصدير.</p>
+      <span class="go">افتح المنصة ◀</span>
+    </a>
+    <a class="card q" href="quiz.html">
+      <div class="ic">🧭</div>
+      <h2>اختبار الرخصة المهنية</h2>
+      <p>بنك أسئلة تدريبية لتخصص الإشراف التربوي وفق معايير هيئة تقويم التعليم (إتقان) مع تصحيح فوري ومراجعة.</p>
+      <span class="go">ابدأ الاختبار ◀</span>
+    </a>
+  </div>
+</div>
+
+<footer>
+  ✨ <strong>تصميم المشرفة: أسماء الباتلي</strong>
+</footer>
+</body>
+</html>
